@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.bankproject.PrimaryController">
+    <stylesheets>
+        <URL value="@/styles/primary.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.22236180904522612" layoutX="205.0" layoutY="-19.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="207.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mag's Bank &amp; Friends" AnchorPane.leftAnchor="207.0">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="82.0" layoutY="48.0" text="Username">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="151.0" text="Password">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="279.0" layoutY="50.0" prefHeight="42.0" prefWidth="268.0" />
+                  <Button fx:id="gotomenu" layoutX="330.0" layoutY="242.0" mnemonicParsing="false" onAction="#login" text="Login">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="604.0" layoutY="157.0" mnemonicParsing="false" text="Forgot Password?">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="loginMsg" layoutX="314.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.36713764534545">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <PasswordField layoutX="277.0" layoutY="151.0" prefHeight="42.0" prefWidth="268.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
